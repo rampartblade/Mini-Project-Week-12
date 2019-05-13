@@ -1,0 +1,16 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Weather App"></Label>
+</ActionBar>
+
+<ListView [items]="countries">
+    <ng-template let-item="item">
+        <Stacklayout>
+                <Label [nsRouterLink]="['/page2', item.CountryName]" [text]="item.CountryName"
+
+                class="list-group-item"></Label>
+
+        </Stacklayout>
+
+    </ng-template>
+
+</ListView>
